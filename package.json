@@ -30,7 +30,7 @@
   },
   "noflo": {
     "components": {
-      "Forwarder": "./components/Select.js"
+      "Forwarder": "./components/Forwarder.js"
     }
   }
 }
