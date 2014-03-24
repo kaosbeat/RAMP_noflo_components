@@ -1,0 +1,36 @@
+{
+  "name": "RAMP_noflo_components",
+  "description": "NoFlo components for RAMP project",
+  "version": "0.0.1",
+  "keywords": [
+    "noflo"
+  ],
+  "author": {
+    "name": "Robby Wauters",
+    "email": "robbywauters@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:RobbyWauters/RAMP_noflo_components.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "git://github.com/burkostya/noflo-lemox/blob/master/LICENSE-MIT"
+    }
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "noflo": "~0.10.0"
+  },
+  "noflo": {
+    "components": {
+      "Forwarder": "./components/Select.js"
+    }
+  }
+}
