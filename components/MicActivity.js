@@ -4,9 +4,12 @@ var Port      = noflo.Port;
 var Component = noflo.Component;
 var io        = require('socket.io-client');
 
+// var WebSocketComponent = require('../components/WebSocketComponent');
 
-var WebSocketComponent = function() {
+
+var MicActivity = function() {
   var self = this;
+  var socket;
 
   self.inPorts = {
     "in": new Port('string')
@@ -21,23 +24,28 @@ var WebSocketComponent = function() {
   self.inPorts.in.on('data', function (data) {
     self.outPorts.out.send(data);
   });
-  // console.log(io);
-  self.socket = io.connect('http://localhost:3000');
-  self.socket.on('connect', function(){
+  console.log('init sockets');
+  socket = io.connect('http://localhost:3000');
+  socket.on('connect', function(){
+
     console.log("socket connection established");
-    self.socket.on('new', self.onSocket);
-    self.socket.on('disconnect', function(){});
+
+    socket.on('event', function(data){console.log("Mic Activity triggered")});
+    socket.on('disconnect', function(){
+      console.log("socket connection lost");
+    });
+    socket.on('error', function(err){console.log(err)});
   });
 
   self.onSocket = function(data){
-    console.log("data triggered");
+    console.log("Mic Activity triggered");
     self.outPorts.out.send(data);
   }
 };
 
 
-util.inherits(WebSocketComponent, Component);
+util.inherits(MicActivity, Component);
 
 exports.getComponent = function() {
-  return new WebSocketComponent();
+  return new MicActivity();
 };

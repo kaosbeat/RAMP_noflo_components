@@ -1,7 +1,7 @@
 {
   "name": "ramp_noflo_components",
   "description": "NoFlo components for RAMP project",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "keywords": [
     "noflo"
   ],
@@ -32,7 +32,7 @@
   "noflo": {
     "components": {
       "Forwarder": "./components/Forwarder.js",
-      "WebSocketComponent": "./components/WebSocketComponent.js"
+      "MicActivity": "./components/MicActivity.js"
     }
   }
 }
