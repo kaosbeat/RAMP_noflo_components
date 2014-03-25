@@ -11,26 +11,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:RobbyWauters/RAMP_noflo_components.git"
+    "url": "git@github.com:mixbe/RAMP_noflo_components.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "git://github.com/burkostya/noflo-lemox/blob/master/LICENSE-MIT"
+      "url": "http://opensource.org/licenses/MIT"
     }
   ],
   "scripts": {
     "test": "mocha"
   },
   "engines": {
-    "node": "^0.10.0"
+    "node": "~0.10.0"
   },
   "dependencies": {
-    "noflo": "*"
+    "noflo": "*",
+    "socket.io-client": "*"
   },
   "noflo": {
     "components": {
-      "Forwarder": "./components/Forwarder.js"
+      "Forwarder": "./components/Forwarder.js",
+      "WebSocketComponent": "./components/WebSocketComponent.js"
     }
   }
 }
