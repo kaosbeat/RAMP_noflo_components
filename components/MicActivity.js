@@ -1,5 +1,6 @@
 var util      = require('util');
 var noflo     = require('noflo');
+var ArrayPort = noflo.ArrayPort;
 var Port      = noflo.Port;
 var Component = noflo.Component;
 var io        = require('socket.io-client');
@@ -21,7 +22,7 @@ var MicActivity = function() {
     "unit": new Port('string')
   };
   self.outPorts = {
-    out:   new Port('string')
+    "out":   new ArrayPort('string')
   };
 
   self.inPorts.unit.on('data', function (data) {

@@ -1,5 +1,6 @@
 var util      = require('util');
 var noflo     = require('noflo');
+var ArrayPort = noflo.ArrayPort;
 var Port      = noflo.Port;
 var Component = noflo.Component;
 
@@ -18,7 +19,7 @@ var JustMacros = function() {
     "send": new Port('bang')
   };
   self.outPorts = {
-    out:   new Port('all')
+    out:   new ArrayPort('all')
   };
 
   self.inPorts.scenario.on('data', function (data) {

@@ -1,7 +1,7 @@
 {
-  "name": "RAMP",
+  "name": "ramp",
   "description": "NoFlo components for RAMP project",
-  "version": "0.0.7",
+  "version": "0.0.5",
   "keywords": [
     "noflo"
   ],
@@ -16,14 +16,14 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
+      "url": "git://github.com/mixbe/RAMP_noflo_components/blob/master/LICENSE-MIT"
     }
   ],
   "scripts": {
     "test": "mocha"
   },
   "engines": {
-    "node": "~0.10.0"
+    "node": "^0.10.0"
   },
   "dependencies": {
     "noflo": "*",
@@ -33,7 +33,22 @@
     "components": {
       "Forwarder": "./components/Forwarder.js",
       "MicActivity": "./components/MicActivity.js",
-      "JustMacros": "./components/JustMacros.js"
+      "JustMacros": "./components/JustMacros.js",
+      "VotingStart": "./components/VotingStart.js",
+      "VotingEnd": "./components/VotingEnd.js",
+      "VotingResults": "./components/VotingResults.js",
+      "MeetingStart": "./components/MeetingStart.js",
+      "MeetingEnd": "./components/MeetingEnd.js",
+      "TopicChange": "./components/TopicChange.js",
+      "CameraPreset": "./components/CameraPreset.js"
     }
-  }
+  },
+  "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mixbe/RAMP_noflo_components/issues"
+  },
+  "homepage": "https://github.com/mixbe/RAMP_noflo_components",
+  "_id": "ramp_noflo_components@0.0.5",
+  "_from": "RAMP_noflo_components@*"
 }

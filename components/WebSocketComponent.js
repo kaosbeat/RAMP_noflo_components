@@ -38,6 +38,6 @@ var WebSocketComponent = function() {
 
 util.inherits(WebSocketComponent, Component);
 
-exports.getComponent = function() {
+exports.WebSocketComponent = function() {
   return new WebSocketComponent();
 };
