@@ -11,20 +11,25 @@ var MicActivity = function() {
   var self = this;
   var socket;
 
+  self.description = 'Detects speech on a certain microphone.'
+
+  self.icon = 'microphone';
+
+  self.micId = 0;
+
   self.inPorts = {
-    "in": new Port('string')
+    "unit": new Port('string')
   };
   self.outPorts = {
     out:   new Port('string')
   };
 
-  self.inPorts.in.on('disconnect', function () {
-    self.outPorts.out.disconnect();
-  });
-  self.inPorts.in.on('data', function (data) {
+  self.inPorts.unit.on('data', function (data) {
+    self.micId = data;
     self.outPorts.out.send(data);
   });
-  console.log('init sockets');
+
+  console.log('initializing sockets');
   socket = io.connect('http://localhost:3000');
   socket.on('connect', function(){
 

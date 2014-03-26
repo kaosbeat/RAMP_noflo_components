@@ -1,7 +1,7 @@
 {
-  "name": "ramp_noflo_components",
+  "name": "RAMP",
   "description": "NoFlo components for RAMP project",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": [
     "noflo"
   ],
@@ -32,7 +32,8 @@
   "noflo": {
     "components": {
       "Forwarder": "./components/Forwarder.js",
-      "MicActivity": "./components/MicActivity.js"
+      "MicActivity": "./components/MicActivity.js",
+      "JustMacros": "./components/JustMacros.js"
     }
   }
 }
