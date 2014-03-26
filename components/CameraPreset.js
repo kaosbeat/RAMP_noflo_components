@@ -27,7 +27,7 @@ var CameraPreset = function() {
   };
 
   self.inPorts.preset.on('data', function (data) {
-    self.scenario = data;
+    self.preset = data;
   });
   self.inPorts.camID.on('data', function (data) {
     self.camID = data;

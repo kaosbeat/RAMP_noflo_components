@@ -1,12 +1,12 @@
 {
-  "name": "ramp",
+  "name": "ramp_noflo_components",
   "description": "NoFlo components for RAMP project",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "keywords": [
     "noflo"
   ],
   "author": {
-    "name": "Robby Wauters",
+    "name": "robbywauters",
     "email": "robbywauters@gmail.com"
   },
   "repository": {
@@ -16,7 +16,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "git://github.com/mixbe/RAMP_noflo_components/blob/master/LICENSE-MIT"
+      "url": "http://opensource.org/licenses/MIT"
     }
   ],
   "scripts": {
@@ -39,8 +39,12 @@
       "VotingResults": "./components/VotingResults.js",
       "MeetingStart": "./components/MeetingStart.js",
       "MeetingEnd": "./components/MeetingEnd.js",
+      "Topic": "./components/Topic.js",
       "TopicChange": "./components/TopicChange.js",
-      "CameraPreset": "./components/CameraPreset.js"
+      "CameraPreset": "./components/CameraPreset.js",
+      "Delegate": "./components/Delegate.js",
+      "DelegateOnSeat": "./components/DelegateOnSeat.js",
+      "DelegateOffSeat": "./components/DelegateOffSeat.js"
     }
   },
   "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
