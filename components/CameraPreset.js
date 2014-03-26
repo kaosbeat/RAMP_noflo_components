@@ -23,7 +23,9 @@ var CameraPreset = function() {
     "send": new Port('bang')
   };
   self.outPorts = {
-    out:   new ArrayPort('all')
+    out:   new ArrayPort('all'),
+    onFinish: new ArrayPort('all'),
+    onMove:   new ArrayPort('all')
   };
 
   self.inPorts.preset.on('data', function (data) {
