@@ -1,17 +1,17 @@
 {
-  "name": "ramp",
-  "description": "NoFlo components for RAMP project",
+  "name": "webdox",
+  "description": "NoFlo components for webdox",
   "version": "0.0.8",
   "keywords": [
     "noflo"
   ],
   "author": {
-    "name": "robbywauters",
-    "email": "robbywauters@gmail.com"
+    "name": "Kasper Jordaens",
+    "email": "kasper.jordaens@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mixbe/RAMP_noflo_components.git"
+    "url": "git@github.com:kaosbeat/webdox_noflo_components.git"
   },
   "licenses": [
     {
@@ -31,28 +31,7 @@
   },
   "noflo": {
     "components": {
-      "Forwarder": "./components/Forwarder.js",
-      "MicActivity": "./components/MicActivity.js",
-      "JustMacros": "./components/JustMacros.js",
-      "VotingStart": "./components/VotingStart.js",
-      "VotingEnd": "./components/VotingEnd.js",
-      "VotingResults": "./components/VotingResults.js",
-      "MeetingStart": "./components/MeetingStart.js",
-      "MeetingEnd": "./components/MeetingEnd.js",
-      "Topic": "./components/Topic.js",
-      "TopicChange": "./components/TopicChange.js",
-      "CameraPreset": "./components/CameraPreset.js",
-      "Delegate": "./components/Delegate.js",
-      "DelegateOnSeat": "./components/DelegateOnSeat.js",
-      "DelegateOffSeat": "./components/DelegateOffSeat.js"
+      "Forwarder": "./components/Forwarder.js"
     }
-  },
-  "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
-  "readmeFilename": "README.md",
-  "bugs": {
-    "url": "https://github.com/mixbe/RAMP_noflo_components/issues"
-  },
-  "homepage": "https://github.com/mixbe/RAMP_noflo_components",
-  "_id": "ramp_noflo_components@0.0.5",
-  "_from": "RAMP_noflo_components@*"
+  }
 }
