@@ -31,7 +31,24 @@
   },
   "noflo": {
     "components": {
-      "Forwarder": "./components/Forwarder.js"
+      "Forwarder": "./components/Forwarder.js",
+      "Backwarder": "./components/Backwarder.js",
+      "Metro": "./components/metro.js",
+      "DataSender": "./components/datasender.js",
+      "SimpleTweet": "./components/simpletweet.js",
+      "getJSON": "./components/getJSON.js"
+
     }
-  }
+  },
+  "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/kaosbeat/webdox_noflo_components/issues"
+  },
+  "_id": "webdox@0.0.8",
+  "dist": {
+    "shasum": "b88414bd81601fa1c9a6a80a2d566851a09caf14"
+  },
+  "_resolved": "git://github.com/kaosbeat/webdox_noflo_components#cded6b585ecebc067b8da9ed8a80fa7a8bc9f973",
+  "_from": "webdox@git://github.com/kaosbeat/webdox_noflo_components"
 }
