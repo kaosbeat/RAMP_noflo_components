@@ -11,8 +11,7 @@ var D3rect = function() {
   self.y = 100;
   self.width = 50;
   self.height = 50;
-  self.RGBfill = 888888;
-  self.hashtag = "mixbe";
+  self.RGBfill = '#888888';
 
   self.inPorts = {
     'x': new Port('integer'),
@@ -25,7 +24,7 @@ var D3rect = function() {
 
 
   self.outPorts = {
-    'D3rect':   new Port('object')
+    'objD3rect':   new Port('object')
   };
 
   self.inPorts.x.on('data', function (x) {
@@ -58,7 +57,7 @@ var D3rect = function() {
             "height": self.height,
             "RGBfill": self.RGBfill
         }
-    self.outPorts.D3rect.send(JSON.stringify(rect));
+    self.outPorts.objD3rect.send(JSON.stringify(rect));
   });
 
 };
