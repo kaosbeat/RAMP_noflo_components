@@ -15,7 +15,7 @@ var DataSender = function() {
     'reset': new Port('bang')
   };
   self.outPorts = {
-    'out':   new Port('int'),
+    'out':   new Port('number'),
     'end':   new Port('bang')
   };
 
@@ -24,13 +24,16 @@ var DataSender = function() {
         self.outPorts.end.send(true);
     } else {
       var dar = ar.shift();
-      console.log(ar[0]);
+      // var intdar = int(dar);
+      // console.log(ar[0]);
       self.outPorts.out.send(dar);
+
     }
   });
 
   self.inPorts.reset.on('data', function () {
     ar = arecibo.split("");
+    self.outPorts.out.disconnect()
     console.log("data has been reset");
   });
 

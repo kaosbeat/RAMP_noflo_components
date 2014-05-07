@@ -10,10 +10,10 @@ var Value = function() {
   this.value = 0;
 
   self.inPorts = {
-    'value': new Port('integer'),
+    'value': new Port('integer')
   };
   self.outPorts = {
-    'out':   new Port('integer'),
+    'out':   new Port('integer')
   };
 
   self.inPorts.value.on('data', function (data) {

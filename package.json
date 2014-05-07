@@ -36,10 +36,13 @@
       "Metro": "./components/metro.js",
       "DataSender": "./components/datasender.js",
       "D3rect": "./components/D3rect.js",
+      "D3clear": "./components/D3clear.js",
       "SimpleTweet": "./components/simpletweet.js",
       "getJSON": "./components/getJSON.js",
       "Value": "./components/value.js",
-      "Modulo": "./components/Modulo.js"
+      "Modulo": "./components/Modulo.js",
+      "ConsoleLog": "./components/consolelog.js",
+      "Compare": "./components/compare.js"
     }
   },
   "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
