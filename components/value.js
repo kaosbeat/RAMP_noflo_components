@@ -18,12 +18,11 @@ var Value = function() {
 
   self.inPorts.value.on('data', function (data) {
 	this.value = data;
-    self.outPorts.out.send(self.value);
-    }
+    self.outPorts.out.send(this.value);
   });
 
 
-	};
+};
 
 util.inherits(Value, Component);
 
