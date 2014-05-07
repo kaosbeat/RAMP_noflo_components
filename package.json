@@ -38,7 +38,8 @@
       "D3rect": "./components/D3rect.js",
       "SimpleTweet": "./components/simpletweet.js",
       "getJSON": "./components/getJSON.js",
-      "Value": "./components/value.js"
+      "Value": "./components/value.js",
+      "Modulo": "./components/Modulo.js"
     }
   },
   "readme": "# RAMP_noflo_components\n\n\nNoFlo components for RAMP.\n\n## Components\n\n### Select\n\n\n\n#### In ports:\n\n- IN: something\n\n#### Out ports:\n\n- OUT: something",
