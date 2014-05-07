@@ -11,20 +11,20 @@ var D3rect = function() {
   self.y = 100;
   self.width = 50;
   self.height = 50;
-  self.RGBfill = '#888888';
+  self.rgbfill = '#34e411';
 
   self.inPorts = {
     'x': new Port('integer'),
     'y': new Port('integer'),
     'width': new Port('integer'),
     'height': new Port('integer'),
-    'RGBfill': new Port('string'),
-    'sendObject': new Port('bang')
+    'rgbfill': new Port('string'),
+    'sendobject': new Port('bang')
   };
 
 
   self.outPorts = {
-    'objD3rect':   new Port('object')
+    'objd3rect':   new Port('string')
   };
 
   self.inPorts.x.on('data', function (x) {
@@ -43,11 +43,11 @@ var D3rect = function() {
     self.height = height;
   });
 
-  self.inPorts.RGBfill.on('data', function (RGBfill) {
-    self.RGBfill = RGBfill;
+  self.inPorts.rgbfill.on('data', function (rgbfill) {
+    self.rgbfill = rgbfill;
   });
 
-  self.inPorts.sendObject.on('data', function () {
+  self.inPorts.sendobject.on('data', function () {
     console.log('sending rect');
     var rect = {
             "type": "rect",
@@ -55,9 +55,9 @@ var D3rect = function() {
             "y": self.y,
             "width": self.width,
             "height": self.height,
-            "RGBfill": self.RGBfill
+            "rgbfill": self.rgbfill
         }
-    self.outPorts.objD3rect.send(JSON.stringify(rect));
+    self.outPorts.objd3rect.send(JSON.stringify(rect));
   });
 
 };
