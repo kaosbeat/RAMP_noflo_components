@@ -30,11 +30,22 @@ var D3rect = function() {
 
   self.inPorts.x.on('data', function (x) {
     self.x = x;
-    console.log('x = '+ self.x);
   });
 
   self.inPorts.y.on('data', function (y) {
     self.y = y;
+  });
+
+  self.inPorts.width.on('data', function (width) {
+    self.width = width;
+  });
+
+  self.inPorts.height.on('data', function (height) {
+    self.height = height;
+  });
+
+  self.inPorts.RGBfill.on('data', function (RGBfill) {
+    self.RGBfill = RGBfill;
   });
 
   self.inPorts.sendObject.on('data', function () {
