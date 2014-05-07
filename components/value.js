@@ -7,18 +7,24 @@ var Component = noflo.Component;
 var Value = function() {
 
   var self = this;
-  this.value = 0;
+  self.value = 0;
 
   self.inPorts = {
-    'value': new Port('integer')
+    'value': new Port('integer'),
+    'bang': new Port('bang')
   };
   self.outPorts = {
     'out':   new Port('integer')
   };
 
   self.inPorts.value.on('data', function (data) {
-	this.value = data;
-    self.outPorts.out.send(this.value);
+	  self.value = data;
+    // self.outPorts.out.send(self.value);
+  });
+
+  self.inPorts.bang.on('data', function () {
+    self.outPorts.out.send(self.value);
+    self.outPorts.out.disconnect();
   });
 
 
